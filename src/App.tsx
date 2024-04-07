@@ -4,6 +4,8 @@ import { Hero } from "./components/Hero/Hero";
 import { MenuCart } from "./components/MenuCart/MenuCart";
 import { Navbar } from "./components/Navbar/Navbar";
 
+
+import { FaGithub } from "react-icons/fa6";
 function App() {
   return (
     <>
@@ -14,17 +16,24 @@ function App() {
         <MenuCart />
         <Desc />
       </main>
-      <footer>
+      <footer className="flex mx-auto gap-4 md:my justify-center ">
         <a
           href="https://gaston-nucba.vercel.app"
           target="_blank"
           rel="noopener noreferrer"
         >
           <img
-            className="mx-auto md:my-8 h-8"
+            className="-8 h-8  hover:animate-bounce"
             src="https://gaston-nucba.vercel.app/assets/logosm.png"
-            alt="logo"
+            alt="Developed by Gaston Alonso"
           />
+        </a>
+        <a
+          href="https://github.com/t0ng42013"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaGithub className="text-3xl  elemento inset-1 border rounded-full " />
         </a>
       </footer>
     </>

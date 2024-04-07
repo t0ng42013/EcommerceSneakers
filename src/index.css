@@ -6,3 +6,18 @@ body{
     max-width: 1150px;
     margin: 25px auto;
 }
+
+
+@keyframes gh {
+  0% {
+    box-shadow: 0 0 5px #020202, 0 0 10px #f3e7e7, 0 0 20px #020202;
+  }
+  100% {
+    box-shadow: 0 0 1px #020202, 0 0 5px #f3e7e7, 0 0 5px #020202;
+  }
+}
+
+/* Aplicamos la animación a un elemento */
+.elemento {
+  animation: gh 1s ease-in-out infinite alternate;
+}
