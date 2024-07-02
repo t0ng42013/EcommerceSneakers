@@ -27,5 +27,7 @@ body{
     font-family: 'Kumbh Sans', sans-serif;
    
 }
-
+button{
+    border: none;
+}
 `;

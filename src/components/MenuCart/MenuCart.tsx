@@ -53,7 +53,7 @@ export const MenuCart = () => {
             {cartItem === 0 ? (
               " "
             ) : (
-              <button className="py-4 px-16  bg-orange text-white font-Kumbh rounded-lg w-full hover:opacity-50">
+              <button className="border-none py-4 px-16  bg-orange text-white font-Kumbh rounded-lg w-full hover:opacity-50">
                 Checkout
               </button>
             )}
