@@ -2,8 +2,10 @@ import { BsCart3 } from "react-icons/bs";
 import { useDispatch, useSelector } from "react-redux";
 import { addQuantityCart, addToCart } from "../../redux/cart/cartSlice";
 
+
+
 export const SecPrice = () => {
-  const count = useSelector((state: any) => state.cart.count);
+  const count = useSelector((state:any) => state.cart.count);
   const dispatch = useDispatch();
 
   return (
@@ -23,18 +25,18 @@ export const SecPrice = () => {
         <div className="relative w-full bg-LightGrayishBlue p-4 rounded-md flex items-center mb-4 md:w-auto md:mb-0">
           <button
             onClick={() => dispatch(addQuantityCart("decrement"))}
-            className=" absolute left-4 text-3xl font-bold text-orange hover:opacity-50"
+            className="border-none absolute left-4 text-3xl font-bold text-orange hover:opacity-50"
           >
             -
           </button>
           <input
             type="text"
             value={count}
-            className="w1/2 bg-transparent m-auto block text-center font-bold text-lg w-min md:w-32"
+            className="border-none w1/2 bg-transparent m-auto block text-center font-bold text-lg w-min md:w-32"
           />
           <button
             onClick={() => dispatch(addQuantityCart("increment"))}
-            className=" absolute right-4 text-2xl font-bold text-orange hover:opacity-50"
+            className="border-none absolute right-4 text-2xl font-bold text-orange hover:opacity-50"
           >
             +
           </button>
