@@ -14,7 +14,7 @@ export const Hamburger = () => {
       } md:flex  md:translate-x-0 md:static md:bg-transparent md:items-center`}
     >
       <button
-        className="bg-white p-4 w-[231px] text-start font-semibold text-gray-600 text-xl md:hidden md:w-full"
+        className="bg-white p-4 w-[321px] text-start font-semibold text-gray-600 text-xl md:hidden md:w-full"
         onClick={() => dispatch(toggleMenu(menu))}
       >
         <IoClose className="text-gray hover:text-orange " />
